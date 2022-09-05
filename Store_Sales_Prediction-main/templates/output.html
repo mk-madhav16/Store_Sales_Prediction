@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Sales Prediction</title>
+    <link rel="shortcut icon" type="image/jpg" href="static/Images/icon.png"/>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="banner">
+        <img src="static/Images/icon.png" class="logo">
+        <div class="banner-text">
+            <h1 style="color: black;">Stores Sales Prediction</h1>
+            {% if output is defined %}
+            <div  class="col-md-12 text-center">
+                <h2 style="padding-top:2%">Predicted Sales : {{ output }}</h2>
+            </div>
+            <br>
+        {% else %}
+        <br>
+        {% endif %}
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <section id="footer">
+        <div class="social-links">
+            <a href="https://github.com/NeetDodhia"><i class="fa fa-github"></i></a>
+            <a href="mailto:neetdodhia@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.instagram.com/_neeeeettt_/"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/@NeetDodhia"><i class="fa fa-twitter"></i></a>
+        </div>
+    </section>
+</body>
+
+</html>
